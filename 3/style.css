@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 500vh;
+}
+#wrap {
+    height: 100vh;
+    background-color: #eee;
+
+}
+.fixedTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: salmon;
+    text-align: center;
+    align-content: center;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all .3s;
+}
+#wrap.scroll .fixedTop {
+    
+    opacity: 1;
+    transform: translateY(0);
+}
